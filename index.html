@@ -34,7 +34,7 @@
 </form>
 <script>
 (() => {
-  const C = {"salt":"lHtTfgyseP40IzMbjjrKpg==","iter":310000,"kid":"b6e0d0c22e0e","bin":"x/app.bin","mode":"app"};
+  const C = {"salt":"3nV4GVyhksd6Iz0PSczjSA==","iter":310000,"kid":"fac341ae132d","bin":"x/app.bin","mode":"app"};
   const K = 'dtms-gate-' + C.kid, $ = (id) => document.getElementById(id);
   const b64 = (s) => Uint8Array.from(atob(s), (ch) => ch.charCodeAt(0));
   const store = (fn) => { try { return fn(localStorage); } catch (e) { return null; } };
