@@ -1374,3 +1374,6 @@ body.cap .tour-btn, body.cap .tour-layer, body.rv-mode .tour-layer { display: no
 .tk-file { display: inline-flex; align-items: center; gap: 6px; font-size: 14px; }
 .tk-dlg .vtable td .vctl { min-width: 140px; }
 .tk-dlg .msg.err { color: #D92D20; font-size: 12px; margin-top: 4px; }
+/* T54: khối Trình ký (BR-TKV-03-08) — bấm dòng mở Chi tiết lần trình. */
+[data-tkb] .tk-click { cursor: pointer; }
+[data-tkb] .tk-click:hover td { background: var(--row-hover, #f7f8fa); }
