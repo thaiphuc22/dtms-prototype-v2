@@ -443,6 +443,15 @@ body.cap .actionbar { position: relative; }
 .vsel-opt .cb { width: 18px; height: 18px; flex-shrink: 0; border: 1px solid #C6C6C9; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #fff; box-sizing: border-box; }
 .vsel-opt.on .cb { background: #EE0033; border-color: #EE0033; }
 .vsel-empty { padding: 10px 14px; color: #76777A; }
+/* T59 #43: chip của vht-multi-select (display="chip"; p-chip theme surface.100, radius sm, gap 4px — VHT_MULTI_SELECT_CHIP_GAP). */
+.vsel-chips { display: flex; align-items: center; gap: 4px; padding: 3px 0 3px 8px; white-space: nowrap; text-overflow: clip; }
+.vsel-chip { display: inline-flex; align-items: center; gap: 4px; flex-shrink: 0; height: 26px; box-sizing: border-box; padding: 0 6px 0 8px; border-radius: 6px; background: #F1F1F2; color: #2D3036; font-size: 13px; line-height: 18px; }
+.vsel-chip[hidden] { display: none; }
+.vsel-chip.more { padding: 0 8px; cursor: default; }
+.vsel-chip-l { display: inline-block; max-width: 140px; overflow: hidden; text-overflow: ellipsis; white-space: pre; }
+.vsel-chip-x { display: inline-flex; align-items: center; justify-content: center; width: 16px; height: 16px; border-radius: 50%; color: #5D5E61; cursor: pointer; }
+.vsel-chip-x:hover { background: #E2E2E5; color: #2D3036; }
+.vsel-chip-x svg { width: 12px; height: 12px; }
 
 /* vht-table: khung border #E2E2E5 radius 12; header 40 #F0F1F2 600; dòng 56; ô padding 8/12, kẻ phải + dưới. */
 .vtable-vp { min-height: 0; overflow: auto; border: 1px solid #E2E2E5; border-radius: 12px; }
@@ -1395,3 +1404,27 @@ body.cap .tour-btn, body.cap .tour-layer, body.rv-mode .tour-layer { display: no
 
 /* T56 (review Nhi 12/11 #12): dải tab Việc của tôi chỉ 2 tab — không cuộn dọc / ngang. */
 .vct-tabs { overflow: visible; }
+
+/* T59 B2–B4 */
+/* Rà soát tồn kho (tab của màn việc bước 7): hai ô tệp cạnh nhau (Q8). */
+.rsk-ups { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 12px; }
+.rsk-sign { font-size: 14px; color: #2D3036; }
+@media (max-width: 760px) { .rsk-ups { grid-template-columns: 1fr; } }
+/* Chi tiết BPMN: khung thông tin bước + chú giải (Q5). */
+.bp-wrap { position: relative; }
+.bp-info { position: absolute; top: 12px; right: 12px; z-index: 4; width: 300px; max-width: calc(100% - 24px); background: #fff; border: 1px solid #DCDEE0; border-radius: 12px; box-shadow: 0 4px 16px rgba(16,24,40,.12); }
+.bp-info-h { display: flex; align-items: center; justify-content: space-between; padding: 8px 8px 8px 16px; border-bottom: 1px solid #F0F1F2; font-size: 14px; color: #0F1110; }
+.bp-info-b { display: grid; gap: 10px; padding: 12px 16px 16px; }
+.bp-info-b .k { font-size: 13px; color: #76777A; }
+.bp-info-b .v { font-size: 14px; color: #2D3036; word-break: break-word; }
+.bp-legend { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; padding: 12px 4px 0; font-size: 13px; color: #44474D; }
+.bp-lg-h { font-weight: 600; color: #0F1110; }
+.bp-lg-i { display: inline-flex; align-items: center; gap: 6px; }
+.bp-lg-sep { width: 1px; height: 16px; background: #DCDEE0; }
+.bp-lg-s { display: inline-block; width: 22px; height: 14px; border-radius: 4px; border: 1.5px solid #51799E; background: #EAF2FC; }
+.bp-lg-s.st-active { background: #e9fbf0; border: 3px solid #5fe495; }
+.bp-lg-s.st-done { background: #E3EDFF; border: 2px solid #2F6FDE; }
+.bp-lg-s.st-todo { background: #EAF2FC; border-color: #51799E; }
+.bp-lg-s.k-service { background: #EAF5ED; border-color: #3E7B52; }
+.bp-lg-s.k-gw { width: 14px; height: 14px; border-radius: 2px; transform: rotate(45deg); background: #FFF6DF; border-color: #AC8136; margin: 0 4px; }
+.bp-lg-s.k-ev { width: 14px; height: 14px; border-radius: 50%; background: #EAF5ED; border-color: #455F73; }
