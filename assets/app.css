@@ -1377,3 +1377,21 @@ body.cap .tour-btn, body.cap .tour-layer, body.rv-mode .tour-layer { display: no
 /* T54: khối Trình ký (BR-TKV-03-08) — bấm dòng mở Chi tiết lần trình. */
 [data-tkb] .tk-click { cursor: pointer; }
 [data-tkb] .tk-click:hover td { background: var(--row-hover, #f7f8fa); }
+/* SRS-DADT V1.4: Chi tiết đề tài — khối 10 chỉ số (lưới 5 cột như FE md:grid-cols-5), chấm "Đã sửa" của chế độ chỉnh sửa (BR-DADT-02-10). */
+.ginfo.c5 { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+@media (max-width: 1100px) { .ginfo.c5 { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 760px) { .ginfo.c5 { grid-template-columns: 1fr; } }
+.dt-tip { display: inline-flex; align-items: center; gap: 4px; cursor: help; }
+.dt-tip svg { width: 14px; height: 14px; }
+.dt-cell { display: inline-flex; align-items: center; gap: 6px; }
+.dt-dirty { width: 8px; height: 8px; border-radius: 50%; background: #EE0033; flex: none; }
+.dt-confirm p { margin: 0 0 8px; line-height: 20px; }
+
+/* T56 (review ChauNNM1 12/11 #2–#8): khoảng ngày = hai vht-calendar + dấu "-" (UI.vDateRange). */
+.vrange-row { display: flex; align-items: center; gap: 8px; }
+.vrange-row .vdate { flex: 1 1 0; min-width: 0; }
+.vrange-sep { flex: none; color: #5D5E61; }
+.rp-f.rp-range { width: 300px; }
+
+/* T56 (review Nhi 12/11 #12): dải tab Việc của tôi chỉ 2 tab — không cuộn dọc / ngang. */
+.vct-tabs { overflow: visible; }
