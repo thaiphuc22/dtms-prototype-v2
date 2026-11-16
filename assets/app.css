@@ -1463,6 +1463,11 @@ body.cap .tour-btn, body.cap .tour-layer, body.rv-mode .tour-layer { display: no
 .tq-metrics .tq-m { cursor: pointer; text-align: left; font: inherit; }
 .tq-metrics .n.warn { color: #b25e09; } .tq-metrics .n.bad { color: #d92d20; }
 .tq-metrics .n small { font-size: 12px; font-weight: 400; color: #667085; }
+/* T69 L1: ô tiền theo đồng (số dài) — tên, mô tả trên; số dưới, căn trái, để tên ô không bị cắt. */
+.tq-metrics .tq-m.money { flex-direction: column; align-items: stretch; gap: 8px; }
+.tq-metrics .tq-m.money .ov-tx { flex: none; }
+.tq-metrics .tq-m.money .ov-n { align-items: flex-start; }
+.tq-metrics .tq-m.money .n { white-space: nowrap; }
 .tq-sts { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; margin-bottom: 16px; }
 .tq-st { display: flex; flex-direction: column; gap: 8px; align-items: flex-start; padding: 16px 20px; background: #fff; border: 1px solid var(--border); border-radius: 12px; cursor: pointer; font: inherit; text-align: left; }
 .tq-st:hover { border-color: #98a2b3; }
