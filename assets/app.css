@@ -1399,6 +1399,7 @@ body.cap .tour-btn, body.cap .tour-layer, body.rv-mode .tour-layer { display: no
 @media (max-width: 760px) { .grid4 { grid-template-columns: 1fr 1fr; } }
 .tk-dlg .tk-pw { display: flex; align-items: center; gap: 8px; } .tk-dlg .tk-pw .vctl { flex: 1; }
 .tk-off { opacity: .5; pointer-events: none; }
+.tk-dlg .tk-sec { font-size: 14px; font-weight: 600; margin: 4px 0 -4px; padding-top: 12px; border-top: 1px solid var(--border, #EAECF0); }
 .tk-files { display: flex; flex-direction: column; gap: 6px; align-items: flex-start; }
 .tk-file { display: inline-flex; align-items: center; gap: 6px; font-size: 14px; }
 .tk-dlg .vtable td .vctl { min-width: 140px; }
