@@ -1461,6 +1461,7 @@ body.cap .tour-btn, body.cap .tour-layer, body.rv-mode .tour-layer { display: no
 .tq-blk .rp-h2 { margin-bottom: 4px; }
 .tq-blk .cap { margin: 0 0 12px; color: var(--muted, #667085); }
 .tq-metrics .tq-m { cursor: pointer; text-align: left; font: inherit; }
+.tq-metrics .tq-m.on { border-color: #EE0033; box-shadow: inset 0 0 0 1px #EE0033; }
 .tq-metrics .n.warn { color: #b25e09; } .tq-metrics .n.bad { color: #d92d20; }
 .tq-metrics .n small { font-size: 12px; font-weight: 400; color: #667085; }
 /* T69 L1: ô tiền theo đồng (số dài) — tên, mô tả trên; số dưới, căn trái, để tên ô không bị cắt. */
@@ -1478,3 +1479,13 @@ body.cap .tour-btn, body.cap .tour-layer, body.rv-mode .tour-layer { display: no
 .vmodal.drawer { width: min(1040px, 100%); height: 100vh; max-height: 100vh; border-radius: 0; display: flex; flex-direction: column; }
 .vmodal.drawer .vmodal-b { flex: 1; overflow: auto; }
 .tq-dr-n { color: #475467; }
+/* T71 S13 — Tổng quan / Báo cáo phân hệ Sản xuất (sx-bao-cao.js) */
+.sxr-filter { justify-content: flex-start; }
+.sxr-filter .vfield { max-width: 100%; }
+.sxtq-5 { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.bc-ht.sxr-pair { display: flex; flex-direction: column; gap: 3px; height: 22px; }
+.bc-ht.sxr-pair .bc-hb { height: 9px; }
+.sxr-how { display: grid; gap: 4px; margin: -4px 0 16px; }
+.sxr-how .cap { margin: 0; }
+@media (max-width: 1100px) { .sxtq-5 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 760px) { .sxtq-5 { grid-template-columns: 1fr; } .sxr-filter .vfield { width: 100% !important; } }
