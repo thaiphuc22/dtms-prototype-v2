@@ -1461,6 +1461,10 @@ body.cap .tour-btn, body.cap .tour-layer, body.rv-mode .tour-layer { display: no
 .tq-blk { margin-top: 8px; }
 .tq-blk .rp-h2 { margin-bottom: 4px; }
 .tq-blk .cap { margin: 0 0 12px; color: var(--muted, #667085); }
+/* T74 #95: khối Gợi ý cho bạn (Dashboard QLSX) — dòng hd-alert + nút hành động bên phải. */
+.sx-sug .hd-alert { align-items: center; }
+.sx-sug .hd-alert .tx { flex: 1; min-width: 0; }
+.sx-sug .hd-alert .vbtn { flex-shrink: 0; }
 .tq-metrics .tq-m { cursor: pointer; text-align: left; font: inherit; }
 .tq-metrics .tq-m.on { border-color: #EE0033; box-shadow: inset 0 0 0 1px #EE0033; }
 .tq-metrics .n.warn { color: #b25e09; } .tq-metrics .n.bad { color: #d92d20; }
